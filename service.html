@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan Kami - TokoElek</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <i class="fas fa-bolt"></i>
+                <span>TokoElek</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="produk.html" class="nav-link">Produk</a></li>
+                <li><a href="promo.html" class="nav-link">Promo</a></li>
+                <li><a href="service.html" class="nav-link active">Layanan</a></li>
+            </ul>
+            <div class="navbar-icons">
+                <button class="icon-btn" id="darkModeBtn" title="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="icon-btn" id="cartBtn" title="Shopping Cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="badge">0</span>
+                </button>
+                <button class="icon-btn" id="wishlistBtn" title="Wishlist">
+                    <i class="fas fa-heart"></i>
+                    <span class="badge">0</span>
+                </button>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>Layanan Kami</span>
+            </div>
+            <h1>Layanan Pelanggan TokoElek</h1>
+            <p>Kami siap membantu Anda 24/7 dengan layanan terbaik</p>
+        </div>
+    </section>
+
+    <!-- Hero Service Section -->
+    <section class="hero-service">
+        <div class="container">
+            <div class="service-hero-content">
+                <h2>Kami Siap Membantu Anda</h2>
+                <p>Hubungi kami melalui berbagai channel yang tersedia. Tim customer service kami siap membantu dengan respons cepat dan solusi terbaik.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Methods -->
+    <section class="contact-methods">
+        <div class="container">
+            <h2>Hubungi Kami</h2>
+            <div class="methods-grid">
+                <a href="https://wa.me/6280012345678" class="method-card" target="_blank">
+                    <div class="method-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>+62 800-1234-5678</p>
+                    <span class="time">Response time: 5 menit</span>
+                </a>
+                <a href="tel:+6280012345678" class="method-card">
+                    <div class="method-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Telepon</h3>
+                    <p>+62 800-1234-5678</p>
+                    <span class="time">Jam 08:00 - 21:00 WIB</span>
+                </a>
+                <a href="mailto:info@tokoelektronik.com" class="method-card">
+                    <div class="method-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>info@tokoelektronik.com</p>
+                    <span class="time">Response time: 2 jam</span>
+                </a>
+                <div class="method-card">
+                    <div class="method-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Live Chat</h3>
+                    <p>Chat dengan customer service kami</p>
+                    <span class="time">Online: 24/7</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Hours -->
+    <section class="service-hours">
+        <div class="container">
+            <h2>Jam Operasional</h2>
+            <div class="hours-grid">
+                <div class="hours-card">
+                    <h3>Customer Service</h3>
+                    <div class="hours-list">
+                        <p><strong>Senin - Jumat:</strong> 08:00 - 21:00 WIB</p>
+                        <p><strong>Sabtu - Minggu:</strong> 09:00 - 20:00 WIB</p>
+                        <p><strong>Hari Libur:</strong> 10:00 - 18:00 WIB</p>
+                    </div>
+                </div>
+                <div class="hours-card">
+                    <h3>Live Chat Support</h3>
+                    <div class="hours-list">
+                        <p><strong>Tersedia:</strong> 24 Jam / 7 Hari</p>
+                        <p style="margin-top: 15px;">Response time rata-rata: 5-10 menit</p>
+                    </div>
+                </div>
+                <div class="hours-card">
+                    <h3>Pengiriman</h3>
+                    <div class="hours-list">
+                        <p><strong>Proses:</strong> 1-2 Hari Kerja</p>
+                        <p><strong>Pengiriman:</strong> 1-3 Hari</p>
+                        <p><strong>Gratis:</strong> Min. Rp 500.000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form-section">
+        <div class="container">
+            <h2>Hubungi Kami Melalui Form</h2>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="fullname">Nama Lengkap</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Nomor HP</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subjek</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Pilih Subjek</option>
+                        <option value="complaint">Keluhan Produk</option>
+                        <option value="return">Pengembalian Barang</option>
+                        <option value="warranty">Garansi</option>
+                        <option value="shipping">Pengiriman</option>
+                        <option value="other">Lainnya</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Pesan</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Kirim Pesan
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Pertanyaan yang Sering Diajukan (FAQ)</h2>
+            <div class="faq-list" id="faqList">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Bagaimana cara melakukan pemesanan?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Untuk melakukan pemesanan, Anda dapat:</p>
+                        <ul>
+                            <li>Masuk ke website kami dan jelajahi produk yang tersedia</li>
+                            <li>Pilih produk yang diinginkan dan klik "Tambah ke Keranjang"</li>
+                            <li>Lanjutkan ke checkout dan isi data pengiriman</li>
+                            <li>Pilih metode pembayaran yang diinginkan</li>
+                            <li>Selesaikan pemesanan</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Berapa lama waktu pengiriman?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Waktu pengiriman tergantung lokasi Anda:</p>
+                        <ul>
+                            <li>Jakarta & Sekitarnya: 1-2 hari</li>
+                            <li>Jawa: 2-3 hari</li>
+                            <li>Luar Jawa: 3-7 hari</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Apakah ada biaya pengiriman?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Kami menyediakan gratis ongkir untuk pembelian minimum Rp 500.000. Untuk pembelian di bawah jumlah tersebut, biaya pengiriman akan dihitung berdasarkan lokasi dan berat paket.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Bagaimana jika produk rusak saat diterima?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Jika produk rusak saat diterima:</p>
+                        <ul>
+                            <li>Jangan buka kemasan lebih lanjut</li>
+                            <li>Hubungi customer service kami segera dengan foto bukti</li>
+                            <li>Kami akan mengganti produk Anda tanpa biaya tambahan</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Berapa lama garansi produk?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Semua produk yang kami jual adalah produk original dengan garansi resmi dari distributor resmi. Durasi garansi tergantung pada jenis produk:</p>
+                        <ul>
+                            <li>Smartphone: 1-2 tahun</li>
+                            <li>Laptop: 1-3 tahun</li>
+                            <li>Elektronik rumah tangga: 1-5 tahun</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Metode pembayaran apa saja yang diterima?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Kami menerima berbagai metode pembayaran:</p>
+                        <ul>
+                            <li>Transfer Bank (BCA, Mandiri, BRI, dll)</li>
+                            <li>E-wallet (GoPay, OVO, DANA, dll)</li>
+                            <li>Kartu Kredit</li>
+                            <li>Cicilan 0% (untuk pembelian tertentu)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Advantages -->
+    <section class="service-advantages">
+        <div class="container">
+            <h2>Keunggulan Layanan Kami</h2>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Garansi Resmi</h3>
+                    <p>100% produk original dengan garansi resmi dari distributor</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Pengiriman Cepat</h3>
+                    <p>Pengiriman express 1-2 hari ke Jakarta dan sekitarnya</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <h3>Teknisi Profesional</h3>
+                    <p>Tim teknisi berpengalaman siap membantu</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Dukungan 24/7</h3>
+                    <p>Customer service tersedia 24 jam setiap hari</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-undo"></i>
+                    </div>
+                    <h3>Pengembalian Mudah</h3>
+                    <p>Jaminan uang kembali 30 hari tanpa pertanyaan</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Hadiah & Promo</h3>
+                    <p>Dapatkan bonus dan promo menarik setiap hari</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Tentang TokoElek</h4>
+                    <p>TokoElek adalah toko elektronik online terpercaya yang menyediakan produk elektronik berkualitas dengan harga terjangkau dan pelayanan terbaik.</p>
+                    <div class="social-links">
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Kategori</h4>
+                    <ul>
+                        <li><a href="produk.html?category=smartphone">Smartphone</a></li>
+                        <li><a href="produk.html?category=laptop">Laptop</a></li>
+                        <li><a href="produk.html?category=tablet">Tablet</a></li>
+                        <li><a href="produk.html?category=smart-home">Smart Home</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Bantuan</h4>
+                    <ul>
+                        <li><a href="service.html">Hubungi Kami</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                        <li><a href="#">Syarat & Ketentuan</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontak</h4>
+                    <p><i class="fas fa-phone"></i> +62 800-1234-5678</p>
+                    <p><i class="fas fa-envelope"></i> info@tokoelektronik.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TokoElek. Semua Hak Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AI Chatbot Floating Button -->
+    <button class="floating-chat-btn" id="floatingChatBtn" title="Chat dengan AI Sales Agent">
+        <i class="fas fa-comments"></i>
+        <span class="chat-label">Tanya AI</span>
+    </button>
+
+    <!-- AI Chatbot Modal -->
+    <div class="chat-modal" id="chatModal">
+        <div class="chat-header">
+            <h3>
+                <i class="fas fa-robot"></i> AI Sales Agent
+            </h3>
+            <button class="close-chat" id="closeChatBtn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="message ai-message">
+                <div class="message-content">
+                    <p>Halo 👋 Saya AI Sales Agent TokoElek. Saya siap membantu memilih produk elektronik terbaik sesuai kebutuhan dan budget Anda. Ada yang bisa saya bantu?</p>
+                </div>
+            </div>
+        </div>
+        <div class="chat-quick-replies" id="quickReplies">
+            <button class="quick-reply" data-reply="Saya mencari smartphone dengan budget 5 juta">💰 Budget 5 Juta</button>
+            <button class="quick-reply" data-reply="Rekomendasi laptop untuk gaming">�� Laptop Gaming</button>
+            <button class="quick-reply" data-reply="Ada promo apa sekarang?">🎉 Info Promo</button>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="chatInput" placeholder="Ketik pesan Anda..." class="chat-input">
+            <button class="btn-send" id="sendBtn">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="js/product-data.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/ai-chatbot.js"></script>
+    <script src="js/service-page.js"></script>
+</body>
+</html>
